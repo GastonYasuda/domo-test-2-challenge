@@ -1,0 +1,14 @@
+[
+    {
+        "id": 1,
+        "icon": "Assets/main-fingerprint.svg",
+        "title": "System analyze your data",
+        "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+    },
+    {
+        "id": 2,
+        "icon": "Assets/main-telephone.svg",
+        "title": "Direct system management",
+        "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+    }
+]

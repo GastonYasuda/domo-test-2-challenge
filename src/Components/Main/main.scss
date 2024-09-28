@@ -1,0 +1,20 @@
+.main_container {
+    width: 80%;
+    margin: auto;
+    flex-wrap: wrap;
+
+    .main_container-info {
+        flex: 1;
+    }
+
+    .main_container-img {
+        flex: 1;
+        text-align: center;
+
+        img {
+            min-width: 400px;
+            width: 100%;
+            border-radius: 15px;
+        }
+    }
+}

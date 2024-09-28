@@ -1,0 +1,40 @@
+.mainLink {
+
+
+    .mainLink_data {
+        position: relative;
+
+        img {
+            width: 45px;
+        }
+
+        button {
+            border: none;
+            background-color: transparent;
+            margin-bottom: 10px;
+
+            img {
+                width: 15px;
+            }
+        }
+
+
+        button::after {
+            content: "";
+            /* Es necesario agregar contenido vacío */
+            display: block;
+            /* Para que se comporte como un elemento de bloque */
+            width: 15px;
+            /* Largo de la línea */
+            height: 2px;
+            /* Grosor de la línea */
+            background-color: black;
+            /* Color de la línea */
+            position: absolute;
+            bottom: 0;
+            /* Coloca la línea al final del contenedor */
+            left: 0;
+            ;
+        }
+    }
+}
