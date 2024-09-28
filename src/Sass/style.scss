@@ -1,0 +1,21 @@
+@use '../Sass/generalColors';
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Inter", system-ui;
+    text-decoration: none;
+    list-style: none;
+}
+
+
+// ----------------------------FlexBox
+
+.d-f-row {
+    display: flex;
+    align-items: center
+}
+
+
+@import '../Components/Header/header.scss';

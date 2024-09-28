@@ -1,0 +1,67 @@
+.header_container {
+    width: 80%;
+    margin: 20px auto;
+    justify-content: space-between;
+    position: relative;
+
+    .socialMedia {
+        z-index: 3;
+
+        img {
+            width: 22px;
+            margin: 0 20px 0 0;
+            transition: all .4s ease;
+        }
+
+        img:hover {
+            filter: invert(30%) sepia(93%) saturate(4138%) hue-rotate(217deg) brightness(103%) contrast(95%);
+            transform: scale(1.1);
+
+        }
+    }
+
+    .logo {
+        width: 100%;
+        position: absolute;
+        justify-content: center;
+
+
+        img {
+            width: 22px;
+            margin-right: 10px;
+        }
+
+        span {
+            font-size: 30px;
+            font-weight: 700;
+            color: #000;
+        }
+    }
+
+    .hamburger {
+        position: relative;
+
+        .hamburger_menu {
+            position: absolute;
+            right: 0;
+            width: 200%;
+            text-align: right;
+            margin: 15px 0px;
+
+            ul {
+                li {
+                    margin-bottom: 10px;
+
+                    a {
+                        color: generalColors.$primaryColor;
+                    }
+
+                    a:hover {
+                        color: generalColors.$secondaryColor;
+                    }
+                }
+
+            }
+        }
+    }
+}
