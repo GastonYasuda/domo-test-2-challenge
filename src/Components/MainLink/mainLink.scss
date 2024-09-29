@@ -1,13 +1,19 @@
 .mainLink {
+    // justify-content: space-around;
+    width: 100%;
+
 
     .mainLink_data {
         position: relative;
-        flex: 1;
-        padding-right: 80px;
+        // width: 30%;
+        margin-right: 35px;
+
 
         .mainLink_data-icon {
-            width: 40px;
-            margin: 0 0 20px 10px;
+            img {
+                width: 40px;
+                margin: 0 0 20px 10px;
+            }
         }
 
         h3 {
@@ -56,10 +62,18 @@
             transform: scale(1.02);
         }
     }
+}
 
-    @media screen and (max-width:800px) {
+@media screen and (max-width:800px) {
+
+    .mainLink {
+        justify-content: space-around;
+
         .mainLink_data {
-            padding: 0 40px;
+            width: 133px;
+            margin: 0;
+            //  width: 30%;
+
         }
     }
 }
