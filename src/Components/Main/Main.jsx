@@ -1,11 +1,15 @@
 import React from 'react'
 import MainLink from '../MainLink/MainLink'
 
-const Main = () => {
-    return (
-        <div className='main_container d-f-row '>
 
-            <div className="main_container-info d-f-col ">
+
+
+const Main = () => {
+
+    return (
+        <div className='main_container d-f-row'>
+
+            <div className="main_container-info d-f-col" data-aos="fade-right">
 
                 <div className="main_container-info-txt">
                     <h3>Core features</h3>
@@ -25,7 +29,7 @@ const Main = () => {
                 </div>
             </div>
 
-            <div className='main_container-img'>
+            <div className='main_container-img' data-aos="fade-left">
                 <img src="Assets/main-img.jpg" alt="women with pc" />
             </div>
 

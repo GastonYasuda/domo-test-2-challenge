@@ -1,12 +1,13 @@
 import React, { useState } from 'react'
 import { Cross as Hamburger } from 'hamburger-react'
+import Logo from '../Logo/Logo'
 
 const Header = () => {
 
     const [isOpen, setOpen] = useState(false)
 
     return (
-        <div className='header_container d-f-row'>
+        <div className='header_container d-f-row' data-aos="fade-down">
 
             <div className="socialMedia">
                 <span>
@@ -31,12 +32,7 @@ const Header = () => {
                 </span>
             </div>
 
-            <div className="logo d-f-row">
-                <a href="/" className='d-f-row'>
-                    <img src="Assets/isologo.svg" alt="isologo" />
-                    <span>Comet</span>
-                </a>
-            </div>
+            <Logo />
 
             <div className="hamburger">
                 <Hamburger size={20} toggled={isOpen} toggle={setOpen} Cross />

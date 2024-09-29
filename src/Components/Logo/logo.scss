@@ -1,0 +1,17 @@
+.logo {
+    width: 100%;
+    position: absolute;
+    justify-content: center;
+    align-items: center;
+
+    img {
+        width: 19px;
+        margin-right: 10px;
+    }
+
+    span {
+        font-size: 15px;
+        font-weight: 800;
+        color: #000;
+    }
+}

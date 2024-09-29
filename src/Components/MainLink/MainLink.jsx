@@ -3,12 +3,10 @@ import mainData from '../../Data/mainData.json'
 
 const MainLink = () => {
     return (
-        <div className='mainLink d-f-row '>
+        <div className='mainLink d-f-row'>
 
             {mainData.map((data, id) => {
                 return (
-
-
 
                     <div className='mainLink_data' key={id}>
 
