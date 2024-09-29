@@ -47,7 +47,10 @@
             right: 0;
             width: 200%;
             text-align: right;
-            margin: 15px 0px;
+            background-color: #ffffff70;
+            backdrop-filter: blur(7px);
+            padding: 15px;
+            border-radius: 15px;
 
             ul {
                 li {
