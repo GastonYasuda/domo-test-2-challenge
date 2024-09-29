@@ -10,8 +10,8 @@ import Footer from './Components/Footer/Footer';
 function App() {
   useEffect(() => {
     AOS.init({
-      duration: 1000, // Duración de la animación en milisegundos
-      once: false,     // Permite que la animación se repita
+      duration: 1000,
+      once: false,
     });
   }, [])
 
