@@ -1,5 +1,6 @@
 import React from 'react'
 import Logo from '../Logo/Logo'
+import myInfo from '../../Data/myInfo.json'
 
 const Footer = () => {
     return (
@@ -11,7 +12,22 @@ const Footer = () => {
             <div className='footer_container d-f-row'>
 
                 <div className="footer_container-data txt-size">
-                    <a href="mailto:gastonyasuda@gmail.com" className='d-f-row' target="_blank" rel="noopener noreferrer">
+
+                    {myInfo.map((info, id) => {
+                        return (
+                            <a href={info.link} className='d-f-row' target="_blank" rel="noopener noreferrer" key={id}>
+                                <img src={info.icon} alt={info.name} />
+                                <span>{info.text}</span>
+                            </a>
+                        )
+                    })}
+
+
+
+
+
+
+                    {/* <a href="mailto:gastonyasuda@gmail.com" className='d-f-row' target="_blank" rel="noopener noreferrer">
                         <img src="Assets/sm-mail-icon.svg" alt="mail" />
                         <span>gastonyasuda@gmail.com</span>
                     </a>
@@ -23,7 +39,7 @@ const Footer = () => {
                     <a href="https://github.com/GastonYasuda/domo-test-2-challenge" className='d-f-row' target="_blank" rel="noopener noreferrer">
                         <img src="Assets/sm-github-icon.svg" alt="github" />
                         <span>github.com/GastonYasuda/domo-test-2-challenge</span>
-                    </a>
+                    </a> */}
                 </div>
 
                 <div className="footer_container-description txt-size">
