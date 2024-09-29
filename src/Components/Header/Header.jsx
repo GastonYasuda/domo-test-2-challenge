@@ -10,8 +10,8 @@ const Header = () => {
 
             <div className="socialMedia">
                 <span>
-                    <a href="https://dribbble.com/" target="_blank" rel="noopener noreferrer">
-                        <img src="Assets/sm-dribble-icon.svg" alt="dribble icon" />
+                    <a href="https://x.com/" target="_blank" rel="noopener noreferrer">
+                        <img src="Assets/sm-twitter-icon.svg" alt="twitter icon" />
                     </a>
                 </span>
                 <span>
@@ -25,23 +25,24 @@ const Header = () => {
                     </a>
                 </span>
                 <span>
-                    <a href="https://x.com/" target="_blank" rel="noopener noreferrer">
-                        <img src="Assets/sm-twitter-icon.svg" alt="twitter icon" />
+                    <a href="https://dribbble.com/" target="_blank" rel="noopener noreferrer">
+                        <img src="Assets/sm-dribble-icon.svg" alt="dribble icon" />
                     </a>
                 </span>
             </div>
+
             <div className="logo d-f-row">
-                <a href="/">
+                <a href="/" className='d-f-row'>
                     <img src="Assets/isologo.svg" alt="isologo" />
                     <span>Comet</span>
                 </a>
             </div>
 
             <div className="hamburger">
-                <Hamburger toggled={isOpen} toggle={setOpen} Cross />
+                <Hamburger size={20} toggled={isOpen} toggle={setOpen} Cross />
 
                 {isOpen &&
-                    <div className="hamburger_menu">
+                    <div className="hamburger_menu txt-size">
                         <ul>
                             <li><a href="/#">About Us</a></li>
                             <li><a href="/#">Project</a></li>

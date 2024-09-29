@@ -1,40 +1,65 @@
 .mainLink {
 
-
     .mainLink_data {
         position: relative;
+        flex: 1;
+        padding-right: 80px;
 
-        img {
-            width: 45px;
+        .mainLink_data-icon {
+            width: 40px;
+            margin: 0 0 20px 10px;
         }
 
-        button {
+        h3 {
+            font-size: 13px;
+            font-weight: 800;
+        }
+
+        .mainLink_data-txt {
+            margin: 14px 0;
+        }
+
+        .mainLink_data-button {
             border: none;
             background-color: transparent;
             margin-bottom: 10px;
+            font-weight: 700;
+            transition: all .4s ease;
 
-            img {
+            a {
+                color: #000;
+                position: relative;
+
+                h3 {
+                    font-size: 10px;
+                }
+
+                img {
+                    width: 8px;
+                    margin-left: 10px;
+                }
+            }
+
+            a ::after {
+                content: "";
+                display: block;
                 width: 15px;
+                position: absolute;
+                top: 18px;
+                height: 2px;
+                background-color: black;
             }
         }
 
+        .mainLink_data-button:hover {
+            filter: invert(29%) sepia(94%) saturate(3093%) hue-rotate(214deg) brightness(99%) contrast(97%);
+            transform: scale(1.02);
+        }
+    }
 
-        button::after {
-            content: "";
-            /* Es necesario agregar contenido vacío */
-            display: block;
-            /* Para que se comporte como un elemento de bloque */
-            width: 15px;
-            /* Largo de la línea */
-            height: 2px;
-            /* Grosor de la línea */
-            background-color: black;
-            /* Color de la línea */
-            position: absolute;
-            bottom: 0;
-            /* Coloca la línea al final del contenedor */
-            left: 0;
-            ;
+    @media screen and (max-width:800px) {
+        .mainLink_data {
+            padding: 0 40px;
         }
     }
 }

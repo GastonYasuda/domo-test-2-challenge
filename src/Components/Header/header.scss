@@ -1,5 +1,5 @@
 .header_container {
-    width: 80%;
+    width: 90%;
     margin: 20px auto;
     justify-content: space-between;
     position: relative;
@@ -8,14 +8,14 @@
         z-index: 3;
 
         img {
-            width: 22px;
-            margin: 0 20px 0 0;
+            width: 12px;
+            margin: 0 12px 0 0;
             transition: all .4s ease;
         }
 
         img:hover {
             filter: invert(30%) sepia(93%) saturate(4138%) hue-rotate(217deg) brightness(103%) contrast(95%);
-            transform: scale(1.1);
+            transform: scale(1.2);
 
         }
     }
@@ -24,16 +24,17 @@
         width: 100%;
         position: absolute;
         justify-content: center;
+        align-items: center;
 
 
         img {
-            width: 22px;
+            width: 19px;
             margin-right: 10px;
         }
 
         span {
-            font-size: 30px;
-            font-weight: 700;
+            font-size: 15px;
+            font-weight: 800;
             color: #000;
         }
     }

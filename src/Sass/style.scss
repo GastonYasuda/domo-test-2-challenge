@@ -9,12 +9,23 @@
     list-style: none;
 }
 
-
 // ----------------------------FlexBox
 
 .d-f-row {
     display: flex;
+    flex-direction: row;
     align-items: center
+}
+
+.d-f-col {
+    display: flex;
+    flex-direction: column;
+}
+
+// ----------------------------Font size
+
+.txt-size {
+    font-size: 10px;
 }
 
 

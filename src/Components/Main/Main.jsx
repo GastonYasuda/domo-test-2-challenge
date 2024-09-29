@@ -5,12 +5,15 @@ const Main = () => {
     return (
         <div className='main_container d-f-row '>
 
-            <div className="main_container-info">
+            <div className="main_container-info d-f-col ">
 
                 <div className="main_container-info-txt">
                     <h3>Core features</h3>
                     <h1>Develop systematically<br /> with Comet</h1>
-                    <h2>Adaptable sections are ideal for crafting versatile layouts.</h2>
+                    <h2>
+                        Adaptable sections are ideal
+                        <span> for crafting versatile layouts.</span>
+                    </h2>
 
                 </div>
 
@@ -20,10 +23,6 @@ const Main = () => {
 
 
                 </div>
-
-
-
-
             </div>
 
             <div className='main_container-img'>
